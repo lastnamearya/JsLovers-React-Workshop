@@ -2,9 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div>
-      Bio
-    </div>
+    <p>Footer</p>
   )
 }
 

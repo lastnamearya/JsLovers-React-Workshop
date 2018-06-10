@@ -1,13 +1,13 @@
 import React from 'react';
-import image from './images/lastnamearya.png'
+import profilePic from './images/lastnamearya.png'
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <figure>
-        <img src={image} alt="" title="" />
+        <img src={profilePic} alt={props.title} title={props.title} />
       </figure>
-      <h1>Jigyasu Arya</h1>
+      <h1>{props.name}</h1>
     </header>
   )
 }
