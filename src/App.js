@@ -2,23 +2,23 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './sass/style.css';
-import Foo from './Foo.js';
+import Header from './Header';
+import Nav from './Nav';
+import Bio from './Bio';
+import Portfolio from './Portfolio';
+import Footer from './Footer';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to Js Lovers</h1>
-        </header>
-        <Foo />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+
+const App = () => {
+  return (
+    <React.Fragment>
+      <Header/>
+      <Nav />
+      <Bio />
+      <Portfolio />
+      <Footer />
+    </React.Fragment>
+  )
 }
 
 export default App;
